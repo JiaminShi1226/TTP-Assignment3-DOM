@@ -1,5 +1,5 @@
 //1. Select the section with an id of container without using querySelector.
-document.getElementById("container");
+console.log(document.getElementById("container"));
 
 //2. Select the section with an id of container using querySelector.
 document.querySelector("#container");
@@ -11,7 +11,7 @@ document.getElementsByClassName("second");
 document.querySelector("ol > .third");
 
 //5. Give the section with an id of container the text "Hello!".
-container.innerHTML = "Hello!";
+document.getElementById("container").innerHTML = "Hello!";
 
 //6. Add the class main to the div with a class of footer.
 document.querySelector(".footer").classList.add("main");
@@ -26,7 +26,7 @@ let newList = document.createElement("li");
 newList.innerHTML = "four";
 
 //10. Append the li to the ul element.
-document.querySelector("ul").appendChild(newList);
+document.getElementById("list").appendChild(newList);
 
 //11. Loop over all of the lis inside the ol tag and give them a background color of "green".
 let orderList = document.querySelectorAll("ol > li");
