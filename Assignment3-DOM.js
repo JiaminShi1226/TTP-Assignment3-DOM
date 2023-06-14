@@ -35,4 +35,4 @@ for (let i = 0; i < orderList.length; i++) {
 }
 
 //12. Remove the div with a class of footer.
-document.querySelector(".footer").remove("div");
+document.querySelector(".footer").remove();
